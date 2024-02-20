@@ -1,6 +1,7 @@
 FROM archlinux:base-devel
 
 COPY pacman.conf /etc/pacman.conf
+COPY makepkg.conf /etc/makepkg.conf
 COPY init-image.bash /init-image.bash
 RUN /init-image.bash
 
